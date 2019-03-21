@@ -3,3 +3,4 @@
  */
 
 export * from './lib/shepherd.service';
+export * from './lib/shepherd.types';
