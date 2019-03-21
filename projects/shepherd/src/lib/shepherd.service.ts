@@ -4,6 +4,7 @@ import Shepherd from 'shepherd.js';
 import { elementIsHidden } from './utils/dom';
 import { makeButton } from './utils/buttons';
 import { normalizeAttachTo } from './utils/attachTo';
+import { AddStepsOptions } from './shepherd.types';
 
 @Injectable({
   providedIn: 'root'
@@ -120,7 +121,7 @@ export class ShepherdService implements OnDestroy {
    * @param {Array} steps An array of steps
    * @private
    */
-  addSteps(steps) {
+  addSteps(steps: AddStepsOptions[]) {
     this._initialize();
     const tour = this.tourObject;
 
